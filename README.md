@@ -1,47 +1,55 @@
-# BigMart Sales Prediction Analysis - Regression
+# 🛒 BigMart Sales Prediction Analysis - Regression
 
-**Complete Video Tutorial:** https://youtu.be/CD58mco2XqA
+A machine learning regression project aimed at predicting the sales of products at BigMart stores. The goal is to analyze the features of products and store attributes to build a model that can accurately forecast item-level sales.
 
-# Dataset Information
+---
 
-The data scientists at BigMart have collected 2013 sales data for 1559 products across 10 stores in different cities. Also, certain attributes of each product and store have been defined. The aim is to build a predictive model and find out the sales of each product at a particular store.
+## 📊 Project Overview
 
-Using this model, BigMart will try to understand the properties of products and stores which play a key role in increasing sales.
+BigMart collected 2013 sales data for 1,559 products across 10 different stores in various cities. Each product and store is described by several attributes. The objective is to build a predictive model that identifies patterns in sales behavior across stores and products, helping BigMart improve sales strategy.
 
+---
 
-Variable | Description
-----------|--------------
-Item_Identifier | Unique product ID
-Item_Weight | Weight of product
-Item_Fat_Content | Whether the product is low fat or not
-Item_Visibility | The % of total display area of all products in a    store allocated to the particular product
-Item_Type | The category to which the product belongs
-Item_MRP | Maximum Retail Price (list price) of the product
-Outlet_Identifier | Unique store ID
-Outlet_Establishment_Year | The year in which store was established
-Outlet_Size | The size of the store in terms of ground area covered
-Outlet_Location_Type | The type of city in which the store is located
-Outlet_Type | Whether the outlet is just a grocery store or some sort of supermarket
-Item_Outlet_Sales | Sales of the product in the particulat store. This is the outcome variable to be predicted.
+## 🧾 Dataset Description
 
-**Download link:** https://www.kaggle.com/devashish0507/big-mart-sales-prediction
+| Variable                      | Description                                         |
+| ----------------------------- | --------------------------------------------------- |
+| **Item_Identifier**           | Unique product ID                                   |
+| **Item_Weight**               | Weight of the product                               |
+| **Item_Fat_Content**          | Whether the product is low fat or not               |
+| **Item_Visibility**           | % of display area allocated to the product          |
+| **Item_Type**                 | Category of the product                             |
+| **Item_MRP**                  | Maximum Retail Price of the product                 |
+| **Outlet_Identifier**         | Unique store ID                                     |
+| **Outlet_Establishment_Year** | Year the store was established                      |
+| **Outlet_Size**               | Physical size of the store                          |
+| **Outlet_Location_Type**      | City type of the store                              |
+| **Outlet_Type**               | Type of outlet (grocery, supermarket, etc.)         |
+| **Item_Outlet_Sales**         | Target variable – product sales in a specific store |
 
-# Libraries
+---
 
-<li>pandas
-<li>matplotlib
-<li>seaborn
-<li>scikit-learn
+## 🧪 Libraries Used
 
-# Algorithms
+- pandas
+- matplotlib
+- seaborn
+- scikit-learn
 
-<li>Linear Regression
-<li>Ridge
-<li>Lasso
-<li>Decision Tree
-<li>Random Forest
-<li>Extra Tress
-  
-**Mean Squared Error:** 0.28
+---
 
-**Note:** The Error metric is in log values. To convert to original values, use exponentiation.
+## 🧠 Algorithms Applied
+
+- Linear Regression
+- Ridge Regression
+- Lasso Regression
+- Decision Tree Regressor
+- Random Forest Regressor
+- Extra Trees Regressor
+
+---
+
+## 📉 Evaluation Metric
+
+- **Mean Squared Error (MSE):** 0.28  
+  _(Note: This value is in log scale; apply exponentiation to convert back to original scale.)_
